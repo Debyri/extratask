@@ -5,12 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
 </head>
 
 <body>
-
+    <div class="main-wrapper">
+        <header class="page-header">
+            <h1 class="website-name">Delice</h1>
+            <nav class="nav-bar">
+                <ul class="list-style">
+                    <li class="nav-buttons"><a href="#">home</a></li>
+                    <li class="nav-buttons"><a href="#">about</a></li>
+                    <li class="nav-buttons"><a href="#">shop</a></li>
+                    <!--Have to add drop down menu to Pages-->
+                    <li class="nav-buttons"><a href="#">pages</a></li>
+                    <li class="nav-buttons"><a href="#">blogs</a></li>
+                    <!--Add link to the contacts in the footer-->
+                    <li class="nav-buttons"><a href="#">contact</a></li>
+                </ul>
+                <div class="serachbar-wrapper">
+                    <img src="search-icon" alt="search-icon">
+                    <!--Search form should appear after you click on the search-icon-->
+                    <form action="GET" class="searchbar-form">
+                        <label for="searchbar">Search for:</label>
+                        <input type="text" name="searchbar" id="searchbar" placeholder="Wague burger">
+                    </form>
+                </div>
+                <div class="social-media">
+                    <ul class="list-style">
+                        <li class="social-icons"><img src="./images/icons/facebook.jpg" alt="facebook"></li>
+                        <li class="social-icons"><img src="./images/icons/twitter.jpg" alt="twitter"></li>
+                        <li class="social-icons"><img src="./images/icons/instagram.jpg" alt="instagram"></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
 </body>
 
 </html>

@@ -13,34 +13,51 @@
 <body>
     <div class="main-wrapper">
         <header class="page-header">
-            <div class="logo"><img src="./images/" alt="Delice"></div>
+            <div class="logo"><img src="./images/delice_logo.jpeg" alt="Delice"></div>
             <nav class="nav-bar">
                 <ul class="list-style">
-                    <li class="nav-buttons"><a href="#">home</a></li>
-                    <li class="nav-buttons"><a href="#">about</a></li>
-                    <li class="nav-buttons"><a href="#">shop</a></li>
+                    <li class="nav-buttons"><a class="nav-bar-links" href="#">home</a></li>
+                    <li class="nav-buttons"><a class="nav-bar-links" href="#">about</a></li>
+                    <li class="nav-buttons"><a class="nav-bar-links" href="#">shop</a></li>
                     <!--Have to add drop down menu to Pages-->
-                    <li class="nav-buttons"><a href="#">pages</a></li>
-                    <li class="nav-buttons"><a href="#">blogs</a></li>
+                    <li class="nav-buttons pages-drop"><a class="nav-bar-links pages-drop" href="#">pages</a>
+                        <ul class="drop-down list-style">
+                            <li>presentation</li>
+                            <li>Chefs</li>
+                            <li class="menu-drop-link">menu
+                                <ul class="menu-drop-list">
+                                    <li><a href="#black-burger" class="menu-drop-list-item">black burger</a></li>
+                                    <li><a href="#quesadilla" class="menu-drop-list-item">Quesadilla</a></li>
+                                    <li><a href="#taco" class="menu-drop-list-item">Taco</a></li>
+                                    <li><a href="#black-burger" class="menu-drop-list-item">black burger</a></li>
+                                </ul>
+                            </li>
+                            <li>gallery</li>
+                        </ul>
+                    </li>
+                    <li class="nav-buttons"><a class="nav-bar-links" href="#">blogs</a></li>
                     <!--Add link to the contacts in the footer-->
-                    <li class="nav-buttons"><a href="#">contact</a></li>
+                    <li class="nav-buttons"><a class="nav-bar-links" href="#contact-us">contact</a></li>
                 </ul>
-                <div class="serachbar-wrapper">
-                    <img src="search-icon" alt="search-icon">
-                    <!--Search form should appear after you click on the search-icon (maybe set width to 0 and expand on action)-->
-                    <form action="GET" class="searchbar-form">
-                        <label for="searchbar">Search for:</label>
-                        <input type="text" name="searchbar" id="searchbar" placeholder="Wague burger">
-                    </form>
-                </div>
-                <div class="social-media">
-                    <ul class="list-style">
-                        <li class="social-icons"><img src="./images/icons/facebook.svg" alt="facebook"></li>
-                        <li class="social-icons"><img src="./images/icons/twitter.svg" alt="twitter"></li>
-                        <li class="social-icons"><img src="./images/icons/instagram.svg" alt="instagram"></li>
-                    </ul>
-                </div>
             </nav>
+            <div class="serachbar-wrapper">
+                <div class="search-icon">
+                    <img src="./images/icons/search.svg" alt="search-icon">
+                </div>
+                <!--Search form should appear after you click on the search-icon (maybe set width to 0 and expand on action)-->
+                <!--<form action="GET" class="searchbar-form">
+                    <label for="searchbar">Search for:</label>
+                    <input type="text" name="searchbar" id="searchbar" placeholder="Wague burger">
+                </form>-->
+            </div>
+            <div class="social-media">
+                <ul class="list-style">
+                    <li class="social-icons"><a href=""><img src="./images/icons/facebook.svg" alt="facebook"></a></li>
+                    <li class="social-icons"><a href=""><img src="./images/icons/twitter.svg" alt="twitter"></a></li>
+                    <li class="social-icons"><a href=""><img src="./images/icons/instagram.svg" alt="instagram"></a>
+                    </li>
+                </ul>
+            </div>
         </header>
         <div class="book-table-slider">
             <h2 class="yellow-header book-table-header">Welcome</h2>
@@ -93,7 +110,7 @@
                         <a href="" class="delice-buttons-styles">our menu</a>
                     </div>
                     <div class="item-description">
-                        <span class="item-name">Black burger</span>
+                        <span class="item-name" id="black-burger">Black burger</span>
                         <span class="item-description">Lorem ipsum dolor</span>
                     </div>
                 </div>
@@ -102,7 +119,7 @@
                         <a href="" class="delice-buttons-styles">our menu</a>
                     </div>
                     <div class="item-description">
-                        <span class="item-name">Quesadilla</span>
+                        <span class="item-name" id="quesadilla">Quesadilla</span>
                         <span class="item-description">Lorem ipsum dolor</span>
                     </div>
                 </div>
@@ -111,7 +128,7 @@
                         <a href="" class="delice-buttons-styles">our menu</a>
                     </div>
                     <div class="item-description">
-                        <span class="item-name">Taco</span>
+                        <span class="item-name" id="taco">Taco</span>
                         <span class="item-description">Lorem ipsum dolor</span>
                     </div>
                 </div>
@@ -120,7 +137,7 @@
                         <a href="" class="delice-buttons-styles">our menu</a>
                     </div>
                     <div class="item-description">
-                        <span class="item-name"></span>
+                        <span class="item-name" id="something">something</span>
                         <span class="item-description">Lorem ipsum dolor</span>
                     </div>
                 </div>
